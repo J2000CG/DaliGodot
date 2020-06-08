@@ -1,0 +1,312 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://KinematicBody2D_GOdt_0.2.gd" type="Script" id=1]
+[ext_resource path="res://start-assets/Dali_mejorado.png" type="Texture" id=2]
+[ext_resource path="res://start-assets/player.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 46, 200 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 48, 48 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="player" type="KinematicBody2D" parent="."]
+position = Vector2( 646, 0 )
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="player"]
+position = Vector2( 0, -0.0104103 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+position = Vector2( 6, 32 )
+shape = SubResource( 3 )
+
+[node name="floor2" type="Node2D" parent="."]
+
+[node name="floor2" type="StaticBody2D" parent="floor2"]
+position = Vector2( 40, 272 )
+
+[node name="Sprite" type="Sprite" parent="floor2/floor2"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 600, 256 )
+scale = Vector2( 1.08333, 1.02037 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_editor_description_": ""
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/floor2"]
+position = Vector2( 600, 256 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="floor3" type="StaticBody2D" parent="floor2"]
+position = Vector2( 144, 272 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="floor2/floor3"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 600, 256 )
+scale = Vector2( 1.08333, 1.02037 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_editor_description_": ""
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/floor3"]
+position = Vector2( 600, 256 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="floor4" type="StaticBody2D" parent="floor2"]
+position = Vector2( 240, 184 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="floor2/floor4"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 600, 256 )
+scale = Vector2( 1.08333, 1.02037 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_editor_description_": ""
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/floor4"]
+position = Vector2( 600, 256 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="floor5" type="StaticBody2D" parent="floor2"]
+position = Vector2( 344, 176 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="floor2/floor5"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 600, 256 )
+scale = Vector2( 1.08333, 1.02037 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_editor_description_": ""
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/floor5"]
+position = Vector2( 600, 256 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="floor6" type="StaticBody2D" parent="floor2/floor5"]
+position = Vector2( 104, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="floor2/floor5/floor6"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 600, 256 )
+scale = Vector2( 1.08333, 1.02037 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_editor_description_": ""
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/floor5/floor6"]
+position = Vector2( 600, 256 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="floor6" type="StaticBody2D" parent="floor2"]
+position = Vector2( -693.729, 272 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="floor2/floor6"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 483.579, 256 )
+scale = Vector2( 1.08333, 1.02037 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_editor_description_": ""
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/floor6"]
+position = Vector2( 483.579, 256 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="floor2" type="StaticBody2D" parent="floor2/floor6"]
+position = Vector2( 114.339, 0 )
+
+[node name="Sprite" type="Sprite" parent="floor2/floor6/floor2"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 600, 256 )
+scale = Vector2( 1.08333, 1.02037 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_editor_description_": ""
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/floor6/floor2"]
+position = Vector2( 600, 256 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="floor3" type="StaticBody2D" parent="floor2/floor6"]
+position = Vector2( 218.339, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="floor2/floor6/floor3"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 600, 256 )
+scale = Vector2( 1.08333, 1.02037 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_editor_description_": ""
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/floor6/floor3"]
+position = Vector2( 600, 256 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="floor4" type="StaticBody2D" parent="floor2/floor6"]
+position = Vector2( 314.339, -88 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="floor2/floor6/floor4"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 600, 256 )
+scale = Vector2( 1.08333, 1.02037 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_editor_description_": ""
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/floor6/floor4"]
+position = Vector2( 600, 256 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="floor5" type="StaticBody2D" parent="floor2/floor6"]
+position = Vector2( 418.339, -96 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="floor2/floor6/floor5"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 600, 256 )
+scale = Vector2( 1.08333, 1.02037 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_editor_description_": ""
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/floor6/floor5"]
+position = Vector2( 600, 256 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="floor6" type="StaticBody2D" parent="floor2/floor6/floor5"]
+position = Vector2( 104, 0 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="floor2/floor6/floor5/floor6"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 600, 256 )
+scale = Vector2( 1.08333, 1.02037 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_editor_description_": ""
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/floor6/floor5/floor6"]
+position = Vector2( 600, 256 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="floor" type="StaticBody2D" parent="floor2"]
+position = Vector2( -74.3388, 272 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="floor2/floor"]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 600, 256 )
+scale = Vector2( 1.08333, 1.02037 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_editor_description_": ""
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor2/floor"]
+position = Vector2( 600, 256 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
